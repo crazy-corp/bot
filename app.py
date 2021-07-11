@@ -25,6 +25,11 @@ def wolframalpha(message):
             jo="Wiki Says : "+res1
             bot.reply_to(message,jo)
         except:
-            bot.reply_to(message,"Sorry, No results! :) ")
+            try:
+                res = client.query(message.text)
+                jo="Wolframalpha says : " +next(res.results).text
+                bot.reply_to(message,jo)
+            except:   
+                bot.reply_to(message,"Sorry, No results! :) ")
     
 bot.polling()
