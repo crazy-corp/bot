@@ -2,9 +2,9 @@ import telebot
 import wolframalpha
 import wikipedia
 
-client = wolframalpha.Client("P92W5T-3A65G6UX69")
+client = wolframalpha.Client("Your_ID")
 
-API_KEY ="1744195881:AAHdZbcR3tQ1PbiffToWfefIeL3Ci7_166Y"
+API_KEY ="Your api key"
 
 bot= telebot.TeleBot(API_KEY)
 
